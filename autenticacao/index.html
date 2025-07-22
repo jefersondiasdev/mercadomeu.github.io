@@ -67,7 +67,7 @@
   </style>
 </head>
 <body>
-  <h1>Copie a TAG abaixo para sua planilha</h1>
+  <h1>Copie a TAG abaixo e cole na sua planilha:</h1>
 
   <div id="code-box">Carregando código...</div>
   <p class="alert">Essa chave é seu código de acesso. <br/><b>Não compartilhe com ninguém.</b></p>
@@ -92,7 +92,7 @@
     document.getElementById('copy-button').addEventListener('click', () => {
       if (!code) return;
       navigator.clipboard.writeText(code).then(() => {
-        alert('TAG copiada com sucesso!');
+        alert('TAG copiada com sucesso! Agora cole ela na sua planilha.');
       }).catch(err => {
         alert('Erro ao copiar: ' + err);
       });
